@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 #{title}
+    ul.list-group
+        each viewartist, i in artistsview
+            li.list-group-item
+                a(href='/artist/'+viewartist._id)=viewartist.title
+                
+                
